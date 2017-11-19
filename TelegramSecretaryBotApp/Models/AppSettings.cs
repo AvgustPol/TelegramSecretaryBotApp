@@ -9,7 +9,7 @@ namespace TelegramSecretaryBotApp.Models
     {
         //ulr to my bot
         //конечная ссылка на бота
-        public static string Url { get; set; } = "http://helpertelegrambot.azurewebsites.net/";
+        public static string Url { get; set; } = "http://helpertelegrambot.azurewebsites.net/{0}";
 
         public static string Name { get; set; } = "Secretary_helper_bot";
 
