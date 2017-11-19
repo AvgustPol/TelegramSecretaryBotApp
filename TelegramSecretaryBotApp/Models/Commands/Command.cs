@@ -1,4 +1,5 @@
-﻿using Telegram.Bot;
+﻿using Telegram.Bot.Types;
+using Telegram.Bot;
 
 
 namespace TelegramSecretaryBotApp.Models.Commands
@@ -12,7 +13,7 @@ namespace TelegramSecretaryBotApp.Models.Commands
         /// </summary>
         /// <param name="message">сообщение с командой</param>
         /// <param name="client">клиент для возможности отправить ответ обратно</param>
-        public abstract void Execute(Telegram.Bot.Types.Message message, TelegramBotClient client);
+        public abstract void Execute(Message message, TelegramBotClient client);
 
         //сопоставляет комманду, введенную пользователем с текущей командой.
         public bool Contains(string command)
