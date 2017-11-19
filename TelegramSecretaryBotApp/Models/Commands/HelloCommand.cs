@@ -5,7 +5,7 @@ namespace TelegramSecretaryBotApp.Models.Commands
 {
     public class HelloCommand : Command
     {
-        public override string Name => "hello";
+        public override string Name => "/hello";
 
         public override async void Execute(Message message, TelegramBotClient client)
         {
@@ -15,7 +15,7 @@ namespace TelegramSecretaryBotApp.Models.Commands
             //Here must be logic of bots execution for more complicated methods
 
             //воспользуемся клиентом, что бы отправить текстовое сообщение.
-            client.SendTextMessageAsync(chatId, "Hello!", replyToMessageId: massageId);
+            await client.SendTextMessageAsync(chatId, "Если ты это видишь, то это говно работает");
         }
     }
 }
