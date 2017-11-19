@@ -10,7 +10,7 @@ namespace TelegramSecretaryBotApp.Controllers
     {
         public string Index()
         {
-            return "My best bot ever !";
+            return "Test message. My bot is the best bot ever !";
         }
 
         /*
